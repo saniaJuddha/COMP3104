@@ -4,7 +4,7 @@ node_js:
 
 branches:
   only:
-  - master
+  - main
 
 cache:
   directories:
@@ -18,7 +18,7 @@ script:
   #- yarn lint
   - yarn build
   - mv build/index.html build/404.html
-  
+
 deploy:
   provider: pages
   skip_cleanup: true
